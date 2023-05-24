@@ -1,16 +1,18 @@
+import tourOneImage from "../images/tour-1.jpeg";
+import tourTwoImage from "../images/tour-2.jpeg";
+import tourThreeImage from "../images/tour-3.jpeg";
+import tourFourImage from "../images/tour-4.jpeg";
+import Title from "./Title";
+
 const Tours = () => {
   return (
     <section className="section" id="tours">
-      <div className="section-title">
-        <h2>
-          featured <span>tours</span>
-        </h2>
-      </div>
+      <Title title="featured" subtitle="tours" />
 
       <div className="section-center featured-center">
         <article className="tour-card">
           <div className="tour-img-container">
-            <img src="./images/tour-1.jpeg" className="tour-img" alt="" />
+            <img src={tourOneImage} className="tour-img" alt="" />
             <p className="tour-date">august 26th, 2020</p>
           </div>
           <div className="tour-info">
@@ -37,7 +39,7 @@ const Tours = () => {
 
         <article className="tour-card">
           <div className="tour-img-container">
-            <img src="./images/tour-2.jpeg" className="tour-img" alt="" />
+            <img src={tourTwoImage} className="tour-img" alt="" />
             <p className="tour-date">october 1th, 2020</p>
           </div>
           <div className="tour-info">
@@ -62,7 +64,7 @@ const Tours = () => {
 
         <article className="tour-card">
           <div className="tour-img-container">
-            <img src="./images/tour-3.jpeg" className="tour-img" alt="" />
+            <img src={tourThreeImage} className="tour-img" alt="" />
             <p className="tour-date">september 15th, 2020</p>
           </div>
           <div className="tour-info">
@@ -87,7 +89,7 @@ const Tours = () => {
 
         <article className="tour-card">
           <div className="tour-img-container">
-            <img src="./images/tour-4.jpeg" className="tour-img" alt="" />
+            <img src={tourFourImage} className="tour-img" alt="" />
             <p className="tour-date">december 5th, 2019</p>
           </div>
           <div className="tour-info">
