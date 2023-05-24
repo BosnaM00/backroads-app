@@ -5,11 +5,10 @@ const Tours = () => {
   return (
     <section className="section" id="tours">
       <Title title="featured" subtitle="tours" />
-
       <div className="section-center featured-center">
         {tours.map((tour) => {
           return (
-            <article className="tour-card">
+            <article className="tour-card" key={tour.id}>
               <div className="tour-img-container">
                 <img src={tour.image} className="tour-img" alt="" />
                 <p className="tour-date">{tour.date}</p>
